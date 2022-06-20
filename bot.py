@@ -128,7 +128,7 @@ url_i_name = "http://"+namerepl+"."+username+".repl.co"
 # botz = apikey_val["amount"]+1
 
 
-
+#
 # payload = "api_key="+apikey+"&format=json&type=1&url="+url_i_name+"&friendly_name="+url_i_name
 # update_file(apikey, botz)
 # headers = {
