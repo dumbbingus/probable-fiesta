@@ -18,13 +18,9 @@ username_for = low_word
 password_for = low_word + upper_word + number + symbols
 long_password = 16
 long_username = 12
+long_usernamez = 18
 #xdr = "sendelp"
-headers = {
-    'cache-control': "no-cache",
-    'content-type': "application/x-www-form-urlencoded"
-    }
-responsez = requests.request("GET", "https://rawrzz.nordalts.cf/gwetname", headers=headers)
-xdr = responsez.text
+
 
 passwordrepl = "rawr12!AAc"
 
@@ -42,7 +38,7 @@ driver.set_window_size(1920, 1080)
 print("rawr")
 
 usernamerepl = "".join(random.sample(username_for, long_username))
-emailrepl = "".join(random.sample(username_for, long_username))+"@cloudkid.com"
+emailrepl = "".join(random.sample(username_for, long_username))+"@gmail.com"
 a = True
 az = True
 time.sleep(3)
@@ -89,9 +85,14 @@ while az==True:
         az = False
     except:
         pass
+headers = {
+    'cache-control': "no-cache",
+    'content-type': "application/x-www-form-urlencoded"
+    }
+responsez = requests.request("GET", "https://rawrzz.nordalts.cf/gwetname", headers=headers)
+xdr = responsez.text
 
-
-time.sleep(1)
+time.sleep(4)
 driver.find_element(By.XPATH,"/html/body/div[1]/div/div/main/div[2]/div/div/div[10]/div/div[2]").click()
 time.sleep(2)
 driver.find_element(By.XPATH,"/html/body/div[1]/div/div/main/div[2]/div/div/div[7]/div/div/div[2]/div/div[2]/div/textarea").send_keys("curl https://raw.githubusercontent.com/awaprimPL/expert-guacamole/main/a.js -o index.js")
